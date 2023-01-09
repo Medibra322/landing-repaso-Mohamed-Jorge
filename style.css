@@ -1,0 +1,28 @@
+*{
+padding: 0;
+margin: 0;
+}
+header{
+    text-align: center;
+}
+ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+li{
+    flex-direction:column;
+    list-style: none;
+    
+}
+#home{
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+}
+#fotoBack{
+    background-image: url(images/pic01.jpg);
+    height: 20rem;
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
