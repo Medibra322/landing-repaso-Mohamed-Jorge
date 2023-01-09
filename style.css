@@ -1,28 +1,67 @@
+
 *{
+    box-sizing: border-box;
 padding: 0;
 margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header{
     text-align: center;
+    padding: 2rem;
+    
+}
+h1{
+    padding: 0.5rem;
+}
+nav{
+    width: 50%;
+    margin: 0 auto;
+
 }
 ul{
     display:flex;
     justify-content: space-evenly;
+    padding: 1rem;
+    justify-self: center;
+    
 }
 li{
     flex-direction:column;
     list-style: none;
+    padding: 0.5rem;
     
 }
 #home{
-    background-color: red;
-    color: white;
-    padding: 0.5rem;
+    
+    border-radius: 0.3rem;
+    padding: 0.rem;
+    
+    
 }
 #fotoBack{
+    display:flex;
     background-image: url(images/pic01.jpg);
     height: 20rem;
-    
+    align-items: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.red_text{
+    color: red;
+}
+.white_text{
+    color: white;
+}
+.black_box{
+    background-color: black;
+    align-self: center;
+    line-height: 200%;
+    padding: 2rem;   
+}
+.red_box{
+    background-color: red;
 }
