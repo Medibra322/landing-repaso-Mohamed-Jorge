@@ -4,6 +4,7 @@
 padding: 0;
 margin: 0;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border:  1px solid black;
 }
 header{
     text-align: center;
@@ -29,14 +30,15 @@ li{
     flex-direction:column;
     list-style: none;
     padding: 0.5rem;
-    
+    font-size: 0.75rem;
+    color: grey;
 }
-#home{
+li:hover{
     
     border-radius: 0.3rem;
     padding: 0.rem;
-    
-    
+    color: white;
+    background-color: #D52349;
 }
 #fotoBack{
     display:flex;
@@ -46,11 +48,11 @@ li{
     align-self: center;
     justify-content: center;
     text-align: center;
-    height: auto;
+    height: 100%; 
     width: 100%;
     background-color: rgb(204,232,244);
     background-position: center ;
-    background-size: 75%;
+    background-size: 61.94%;
 }
 .red_text{
     color: red;
@@ -66,7 +68,7 @@ li{
     align-self: center;
     line-height: 200%;
     padding: 2rem; 
-    margin: 7.7rem;  
+    margin: 5.7rem;  
 }
 .red_box{
     background-color: red;
@@ -75,37 +77,23 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
+  
     justify-content: center;
     text-align: center;
-    padding: 5rem;
+    padding: 3rem;
+    height: fit-content;
 }
-.jorge{
-    padding: 10rem;   
-}
-button{
-    color: white;
 
-}
-.abc{
-    background-color: #D52349;
-    padding: 0.6rem;
-}
-.cba{
-    background-color: black;
-    padding: 0.6rem;
-    
-}
 .flex_row{
     display: flex;
     flex-direction: row;
-    height: 8rem;
+    height: auto;
     align-items: center;
     align-self: center;
     justify-content: space-evenly;
     text-align: center;
-    width: 75%;
-    
+    width: 69%;
+    overflow: hidden;
 }
 .photo{
     clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
@@ -114,13 +102,15 @@ button{
     height: 5rem;
     font-size: 2.5rem;
     padding: 0.8rem;
-    text-align: center;
-    margin: 5rem;
+    flex-direction: row;
+    
+    margin: 1rem;
     color: white;
   
 }
 .black{
     background-color: black;
+    
     
 }
 .gris{
@@ -128,7 +118,94 @@ button{
 }
 .card{
     width: 25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+}
+.card:hover{
+    box-shadow: 0 0.3rem  0.3rem 0.04rem gray;
 }
 .card h2{
-    line-height: 250%;
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+p{
+    font-size: 0.75rem;
+    color: grey;
+}
+.jorge{
+    margin-top: 0.5rem;
+    padding: 01rem;  
+    display: flex;
+    flex-flow: row wrap;
+    
+    
+}
+button{
+    color: white;
+    width: 12rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    flex-grow: 1;
+    margin:1rem
+
+}
+.abc{
+    background-color: #D52349;
+    padding: 0.9rem;
+    
+}
+.cba{
+    background-color: black;
+    padding: 0.9rem;
+    
+}
+.fondo-gris{
+    background-color: rgb(247 247 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70vw;
+    gap: 2rem;
+    margin:auto
+}
+.card2{
+background-color: white;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.ibra{
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+.ibra button{
+    color: white;
+    width: 8rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+}
+.fondo-gris h2 {
+    margin: 2rem 0;
+}
+.ibra p {
+    line-height: 1.25rem;
+} 
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    gap: 2rem;
+    margin:auto
+}
+footer{
+    background-color: #252122;
+    color: white;
 }
