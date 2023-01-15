@@ -7,6 +7,7 @@
     <title>Landing 4 Repaso</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/956a5047f3.js" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
 </head>
 <body>
     <header>
@@ -130,8 +131,7 @@
                     <div class="card2">
                         <img src="images/pic09.jpg" alt="">
                         <div class="ibra">
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>amet consectetur</p>
+                            <figure><h3>figure</h3><figcaption><p>figcaption</p></figcaption></figure>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aperiam tempore cum quidem facilis debitis alias officia iusto, excepturi minus consequatur? Itaque cum nemo ipsam consequatur debitis rerum, in vero.</p>
                             <div class="jorge">
                                 <button class="abc"><i class="fa-sharp fa-solid fa-file-lines"></i> Continue Reading</button>
@@ -143,7 +143,57 @@
                 </div>
             </div>
         </div>
-    </div>        
+    </div> 
+    <form id="firstForm" action="submit">
+        <legend>First Form</legend>
+            <fieldset>
+              <legend>Selection of radio button</legend>
+              <span>
+                  <label><input id="dopetropeRadio" type="radio" name="dopetrope" value="dopetrope" checked> Dopetrope</label>
+                  <label><input id="tropedopeRadio" type="radio" name="tropedope" value="tropedope"> Tropedope</label>
+              </span>
+            </fieldset>
+            <fieldset>
+              <legend>Properties selection with checkboxes & select</legend>
+              <span>
+                  <input id="loving" type="checkbox" name="properties" value="loving" checked> <label for="loving">Loving</label>
+                  <input id="lazy" type="checkbox" name="properties" value="lazy"> <label for="lazy">Lazy</label>
+                  <input id="energetic" type="checkbox" name="properties" value="energetic"> <label for="energetic">Energetic</label>
+                  <input id="thorough" type="checkbox" name="properties" value="thorough"> <label for="thorough">Thorough</label>
+              </span>
+              <span>
+                  <select name="color">
+                    <option value="white">White</option>
+                    <option value="brown" selected>Brown</option>
+                    <option value="black">Black</option>
+                    </select>
+                </span>
+            </fieldset>
+            <fieldset>
+                <legend>Your data</legend>
+                <input type="text" name="Name" placeholder="write your name here" required>
+                <label for="yourBirthdate">Birthday</label><input type="date" id="birthdate" name="yourBirthdate" value="now" min="1950-01-01" max="2005-12-31">
+                <label for="email">Enter your estudioenpenascal.com email:</label><input type="email" id="email" pattern=".+@estudioenpenascal\.com" value="yourname@estudioenpenascal.com" required>
+                <label for="avatar">Send us your C.V. in pdf:</label><input type="file" id="avatar" name="avatar" accept=".pdf">
+
+              </fieldset>
+              <fieldset>
+                  <legend>Buttons</legend>
+                  <input type="reset" value="Reset the form">
+                  <input type="image" id="buttonImage" alt="Login"src="/images/login-button.png" height="16">
+                  <button type="submit" disabled>Submit</button>
+                </fieldset>
+                
+            </form>  
+            <form id="secondForm" action="submit">
+                <legend>Second Form</legend>
+                <fieldset>
+                    <legend>Comments</legend>                    
+                        <textarea name="textarea" rows="10" cols="50" form="secondForm" placeholder="Resizing in CSS resize: none|both|horizontal|vertical|initial|inherit;"></textarea>              
+                        <input type="submit" />
+                        <input type="reset">
+                </fieldset>
+            </form> 
     </main>
     <footer>
         <div class="grid2gap">
