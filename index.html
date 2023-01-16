@@ -144,48 +144,68 @@
             </div>
         </div>
     </div> 
-    <form id="firstForm" action="submit" class="fondo-gris">
+    <form id="firstForm" class="fondo-gris">
         <legend>First Form</legend>
             <fieldset>
-              <legend>Selection of radio button</legend>
-              <span>
-                  <label><input id="dopetropeRadio" type="radio" name="dopetrope" value="dopetrope" checked> Dopetrope</label>
-                  <label><input id="tropedopeRadio" type="radio" name="tropedope" value="tropedope"> Tropedope</label>
-              </span>
+              <legend>Selection of first and last positions in array</legend>
+              <input type="text" id="firstNumber" placeholder="First number" required>
+              <input type="text" id="lastNumber" placeholder="Last number" required>
+                <input type="reset" value="Reset the form">
+                <button id="recogeDatos">Submit</button>
             </fieldset>
             <fieldset>
-              <legend>Properties selection with checkboxes & select</legend>
+              <legend>Properties selection with checkboxes</legend>
               <span>
                   <input id="loving" type="checkbox" name="properties" value="loving" checked> <label for="loving">Loving</label>
                   <input id="lazy" type="checkbox" name="properties" value="lazy"> <label for="lazy">Lazy</label>
                   <input id="energetic" type="checkbox" name="properties" value="energetic"> <label for="energetic">Energetic</label>
                   <input id="thorough" type="checkbox" name="properties" value="thorough"> <label for="thorough">Thorough</label>
               </span>
-              <span>
-                  <select name="color">
-                    <option value="white">White</option>
-                    <option value="brown" selected>Brown</option>
-                    <option value="black">Black</option>
-                    </select>
-                </span>
+              
             </fieldset>
             <fieldset class="contenedor">
                 <legend>Your data</legend>
-                <input type="text" name="Name" placeholder="write your name here" required>
-                <label for="yourBirthdate">Birthday</label><input type="date" id="birthdate" name="yourBirthdate" value="now" min="1950-01-01" max="2005-12-31">
+                <input type="text" name="Name" placeholder="write your name here">
+                <!-- <label for="yourBirthdate">Birthday</label><input type="date" id="birthdate" name="yourBirthdate" value="now" min="1950-01-01" max="2005-12-31"> -->
                 <label for="email">Enter your estudioenpenascal.com email:</label><input type="email" id="email" pattern=".+@estudioenpenascal\.com" value="yourname@estudioenpenascal.com" required>
                 <label for="avatar">Send us your C.V. in pdf:</label><input type="file" id="avatar" name="avatar" accept=".pdf">
 
               </fieldset>
               <fieldset>
                   <legend>Buttons</legend>
-                  <input type="reset" value="Reset the form">
+                  
                   <input type="image" id="buttonImage" alt="Login"src="/images/login-button.png" height="16">
-                  <button type="submit" disabled>Submit</button>
+                  
                 </fieldset>
                 
             
                 <fieldset>
+                    <span>
+                        <label><input type="radio" name="dopetrope-tropedope" value="0" checked> 0</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="1"> 1</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="2"> 2</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="3"> 3</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="4"> 4</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="5"> 5</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="6"> 6</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="7"> 7</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="8"> 8</label>
+                        <label><input type="radio" name="dopetrope-tropedope" value="9"> 9</label>
+                    </span>
+                    <span>
+                      <select name="seleccion">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9" selected>9</option>
+                        </select>
+                      </span>
                     <legend>Comments</legend>                    
                         <textarea name="textarea" rows="10" cols="50" form="secondForm" placeholder="Resizing in CSS resize: none|both|horizontal|vertical|initial|inherit;"></textarea>              
                         <input type="submit" />
