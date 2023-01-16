@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *{
     box-sizing: border-box;
@@ -281,3 +282,334 @@ textarea {
     resize: none;
   }
   
+=======
+
+*{
+    box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* border:  1px solid black; */
+}
+         /* Header*/
+
+header{
+    text-align: center;
+    padding: 2rem;
+    
+}
+h1{
+    padding: 0.5rem;
+}
+nav{
+    width: 50%;
+    margin: 0 auto;
+
+}
+ul{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    justify-self: center;
+    
+}
+li{
+    flex-direction:column;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    color: grey;
+}
+li:hover{
+    
+    border-radius: 0.3rem;
+    padding: 0.rem;
+    color: white;
+    background-color: #D52349;
+}
+   /* Main foto*/
+
+#fotoBack{
+    display:flex;
+    background-image: url(images/pic01.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    /* height: 60%;  */
+    /* width: 100%; */
+    background-color: rgb(204,232,244);
+    background-position: center ;
+    background-size: 50%;
+}
+.black_box{
+    background-color: black;
+    align-self: center;
+    line-height: 200%;
+    padding: 2rem; 
+    margin: 5.7rem;  
+}
+.white_text{
+    color: white;
+    
+}
+.red_text{
+    color: red;
+    
+}
+
+
+.red_box{
+    background-color: red;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    height: fit-content;
+}
+
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 69%;
+    overflow: hidden;
+}
+.card{
+    width: 25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.photo{
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    background-color: brown;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    padding: 0.4rem;
+    flex-direction: row;
+    
+    /* margin: 1rem; */
+    color: white;
+  
+}
+.black{
+    background-color: black;
+    
+    
+}
+.gris{
+    background-color: grey;
+}
+
+.card:hover{
+    box-shadow: 0 0.3rem  0.3rem 0.04rem gray;
+}
+.card h2{
+    line-height: 150%;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+p{
+    font-size: 0.75rem;
+    color: grey;
+}
+.jorge{
+    margin-top: 0.5rem;
+    padding: 01rem;  
+    display: flex;
+    flex-flow: row wrap;
+    
+    
+}
+button{
+    color: white;
+    width: 12rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    flex-grow: 1;
+    /* margin:1rem */
+
+}
+.abc{
+    background-color: #D52349;
+    padding: 0.9rem;
+    margin: 0 1rem 0 0;
+    
+}
+.cba{
+    background-color: black;
+    padding: 0.9rem;
+    
+}
+.fondo-gris{
+    background-color: rgb(247 247 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70vw;
+    gap: 2rem;
+    margin:auto
+}
+.card2{
+background-color: white;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+.ibra{
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+.ibra button{
+    color: white;
+    width: 8rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+}
+.fondo-gris h2 {
+    margin: 2rem 0;
+}
+.ibra p {
+    line-height: 1.25rem;
+    margin: 1rem 0;
+} 
+.grid2gap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    gap: 2rem;
+    margin:auto
+}
+footer{
+    background-color: #252122;
+    color: white;
+    padding: 1rem 0 5rem 0;
+}
+.grid2nogap{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    padding: 1rem 0;
+    /* margin: auto; */
+ 
+}
+
+.med{
+    border-bottom: 0.01px solid rgb(67, 65, 65);
+    padding: 1rem 0;
+    
+  
+}
+
+.grid2nogap .photo{
+    clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
+    background-color: #D52349;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.7rem;
+    /* padding: 0.8rem; */
+    display: flex;
+    flex-wrap: wrap; 
+}
+h6{
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+.number{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0.5rem;
+    flex-grow: 1;
+}
+
+footer .grid2nogap{
+    grid-template-columns: 1fr 5fr;
+}
+footer .grid2gap{
+    grid-template-columns: 2fr 1fr;
+}
+h5 {
+    font-size: 1.01rem;
+}
+a,strong{
+    color: white;
+}
+/* .xxxx{
+   
+ line-height: 1.25rem;
+} */
+.grid2gap h2,h3,u {
+        margin: 1rem 0;
+        
+}
+.lista-link p{
+    font-size: 0.7rem;
+    padding: 1.5rem 0;
+    
+}
+.social img{
+width:13%;
+height: 13%;
+margin-right: 0.5rem;
+}
+.lista-link{
+    margin: 1rem 0;
+}
+.grid2nogap h3{
+min-width: 75px;
+margin-right: 1rem;
+}
+
+.grid3 h2{
+    margin: 1rem 0;
+
+}
+.grid3{
+    padding: 2rem 0;
+}
+.linea{
+    line-height: 2.25rem;
+}
+#copyright{
+    background-color: #302C2D;
+    width: 40%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+#border-side{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width : 600px){
+    ul{
+        display: block;
+
+    }
+
+}
+>>>>>>> bea9579fec506c2fec69abcf4448998361fb569e
