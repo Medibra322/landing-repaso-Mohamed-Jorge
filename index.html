@@ -151,7 +151,7 @@
               <input type="text" id="firstNumber" placeholder="First number" required>
               <input type="text" id="lastNumber" placeholder="Last number" required>
                 <input type="reset" value="Reset the form">
-                <button id="recogeDatos">Submit</button>
+                <button id="recogeDatos" onclick="recogeDatos();" type="button">Enviar Datos</button>
             </fieldset>
             <fieldset>
               <legend>Properties selection with checkboxes</legend>
@@ -207,7 +207,7 @@
                         </select>
                       </span>
                     <legend>Comments</legend>                    
-                        <textarea name="textarea" rows="10" cols="50" form="secondForm" placeholder="Resizing in CSS resize: none|both|horizontal|vertical|initial|inherit;"></textarea>              
+                        <textarea id="cajatexto" name="textarea" rows="10" cols="50" form="secondForm" placeholder="Resizing in CSS resize: none|both|horizontal|vertical|initial|inherit;"></textarea>              
                         <input type="submit" />
                         <input type="reset">
                 </fieldset>
